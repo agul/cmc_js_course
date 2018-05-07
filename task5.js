@@ -29,10 +29,11 @@ function check_brackets(s) {
       }
     }
   }
-  return true;
+  return stack.length == 0;
 }
 
 console.log(check_brackets("()"));
+console.log(check_brackets("()("));
 console.log(check_brackets("([])"));
 console.log(check_brackets("([)]"));
 console.log(check_brackets("{{([])[()]{}}}"));
